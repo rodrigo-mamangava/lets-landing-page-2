@@ -1,0 +1,22 @@
+{
+  "name": "basic-pkg-muniz",
+  "version": "1.0.0",
+  "description": "Basic pkg for developement",
+  "main": "./distro/index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-less": "^3.5.0",
+    "gulp-livereload": "^3.8.1"
+  },
+  "dependencies": {
+    "bootstrap": "3.3.7",
+    "jquery": "^3.3.1",
+    "jquery-lazy": "^1.7.7"
+  }
+}
