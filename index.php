@@ -1,13 +1,15 @@
-<?php include_once 'functions.php';?>﻿
+<?php include_once 'functions.php'; ?>﻿
 <html>
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="<?php echo plugins_url('css/styles-ls2.css', __FILE__) ?>">
+        <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
         <script src="<?php echo plugins_url('./js/jquery-2.2.0.min.js', __FILE__) ?>"></script>
         <title>
-            <?php echo get_field('title')?>
+            <?php echo get_field('title') ?>
         </title>
     </head>
     <body>
@@ -27,7 +29,7 @@
         <?php include 'templates-parts/modal.php'; ?>
         <?php include 'templates-parts/acabamento.php'; ?>
         <!-- Scripts -->
-        
+
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.6/jquery.lazy.min.js"></script>
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.6/jquery.lazy.plugins.min.js"></script>
         <script src="<?php echo plugins_url('./js/bootstrap.min.js', __FILE__) ?>"></script>

@@ -207,9 +207,19 @@ header{
     .navbar-toggle{
         border:0px;
 
+        @media (max-width: @screen-sm-max){
+            margin-top: 18px;
+        }
+
         .icon-bar{
             background-color: @branco;
         }
+
+        &:hover, &:focus{
+            background-color: transparent;
+        }
+        
+        
 
     }
 
@@ -297,10 +307,14 @@ header{
         }
     }
 
-    button{
-        .text-center;
-        .center-block;
+    @media (max-width: @screen-sm-max){
+        button{
+            .text-center;
+            .center-block;
+        }
     }
+
+
 
     .role{
 

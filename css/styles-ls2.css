@@ -7395,8 +7395,17 @@ header .logo {
 .navbar-default .navbar-toggle {
   border: 0px;
 }
+@media (max-width: 991px) {
+  .navbar-default .navbar-toggle {
+    margin-top: 18px;
+  }
+}
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #ffffff;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: transparent;
 }
 .navbar-default li a {
   color: #ffffff !important;
@@ -7470,11 +7479,13 @@ header .logo {
     text-align: center;
   }
 }
-#ola-tecnologia button {
-  text-align: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+@media (max-width: 991px) {
+  #ola-tecnologia button {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 #ola-tecnologia .role p {
   font-family: Bernina Sans Condense Bold;
