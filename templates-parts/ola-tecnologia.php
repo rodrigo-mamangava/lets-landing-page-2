@@ -20,11 +20,9 @@
     </div>
 
     <a href="#mesma-plataforma" class="role">
-        <p>
-            <?php echo get_field('role_para_ver_mais')?>
-            <br/>
-            <i class="fas fa-chevron-down"></i>
-        </p>
+        <?php echo get_field('role_para_ver_mais')?>
+        <br/>
+        <i class="fas fa-chevron-down"></i>
     </a>
 </section><!-- ola-tecnologia -->
 

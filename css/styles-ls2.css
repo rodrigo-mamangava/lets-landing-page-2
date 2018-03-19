@@ -7543,7 +7543,7 @@ header .logo {
     margin-right: auto;
   }
 }
-#ola-tecnologia .role p {
+#ola-tecnologia .role {
   font-family: Bernina Sans Condense Bold;
   text-transform: uppercase;
   position: absolute;
@@ -7558,7 +7558,7 @@ header .logo {
   line-height: 22px;
 }
 @media (max-width: 991px) {
-  #ola-tecnologia .role p {
+  #ola-tecnologia .role {
     bottom: 85px;
   }
 }
