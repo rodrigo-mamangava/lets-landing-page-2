@@ -287,11 +287,21 @@ header{
     height: 100vh;
     position: relative;
 
-    h1{
-        padding-top: (151px-56x);
-        color: @branco;	        
+    .page-content {
+        position: absolute;
 
+        /* We find the vertical middle, but then slide the content up
+        /* by its half its height plus the header size */
+        @header-height: 98px;
+        top: 45vh; /* not exactly half, keep it slightly higher */
+        transform: translateY(-50%) translateY(-@header-height);
+        left: 0;
     }
+
+    h1 {
+        color: @branco;	        
+    }
+
     p{
         padding-top: 12px;
         padding-bottom: 55px;

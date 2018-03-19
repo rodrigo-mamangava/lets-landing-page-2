@@ -7459,8 +7459,16 @@ header .logo {
   height: 100vh;
   position: relative;
 }
+#ola-tecnologia .page-content {
+  position: absolute;
+  /* We find the vertical middle, but then slide the content up
+        /* by its half its height plus the header size */
+  top: 45vh;
+  /* not exactly half, keep it slightly higher */
+  transform: translateY(-50%) translateY(-98px);
+  left: 0;
+}
 #ola-tecnologia h1 {
-  padding-top: 95px;
   color: #ffffff;
 }
 #ola-tecnologia p {
