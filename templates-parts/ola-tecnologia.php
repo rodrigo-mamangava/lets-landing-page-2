@@ -9,7 +9,7 @@
                         <?php echo get_field('saudacao')?>
                         <span id="areas-atuacao"></span>
                     </h1>
-                    <p>
+                    <p class='title-subtext'>
                         <?php echo get_field('paragrafo_ola_tecnologia')?>
                     </p>
 

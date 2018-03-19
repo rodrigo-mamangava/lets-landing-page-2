@@ -349,36 +349,45 @@ header{
         left: 0;
     }
 
-    h1 {
-        color: @branco;	        
+    .title-subtext {
+        max-width: 500px;
+        margin: 0 auto;
     }
 
-    p{
+    h1 {
+        color: @branco;         
+    }
+
+    p {
         padding-top: 12px;
         padding-bottom: 55px;
-        color: @branco;	
+        color: @branco; 
         font-size: 18px;
         line-height: 30px;
+
         @media (max-width: @screen-sm-max){
             padding-top: 9px;
             padding-bottom: 34px;
-            font-size: 14px;	
-            line-height: 24px;	
+            font-size: 16px;    
+            line-height: 24px;  
             text-align: center;
         }
     }
 
     @media (max-width: @screen-sm-max){
-        button{
-            .text-center;
-            .center-block;
+        .page-content {
+            width: 100%;
+            text-align: center;
         }
+
+        .title-subtext {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+
     }
 
-
-
     .role{
-
         font-family:  @berdina-condense;
         .text-uppercase;
         position: absolute;
@@ -391,12 +400,6 @@ header{
         font-size: 16px;	
         letter-spacing: 1px;	
         line-height: 22px; 
-
-        @media (max-width: @screen-sm-max){
-            bottom: 85px; 
-        }
-
-
     }
 }
 
