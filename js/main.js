@@ -35,13 +35,21 @@ function pinBackground() {
 
 
 function changeWords(wordsArray, intervalo) {
-    var areas = $("#areas-atuacao").html();
-    count = 0;
+    var $areas = $("#areas-atuacao").text(wordsArray[0]);
+    var count = 1;
+
     setInterval(function () {
         count++;
-        $("#areas-atuacao").fadeOut(400, function () {
-            $(this).text(wordsArray[count % wordsArray.length]).fadeIn(400);
-        });
+
+        $areas.removeClass('flipInX')
+        $areas.addClass('flipOutX')
+
+        setTimeout(function() {
+          $areas.removeClass('flipOutX')
+          $areas.text(wordsArray[count % wordsArray.length] + ".")
+          $areas.addClass('flipInX')
+        }, 250);
+
     }, intervalo);
 }
 

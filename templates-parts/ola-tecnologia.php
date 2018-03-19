@@ -33,6 +33,6 @@ $(function () {
     var areas = $("#areas-atuacao").html();
     var palavras = "<?php echo get_field('areas-atuacao')?>"  ;   
     var listaPalavras = palavras.split(',');
-    changeWords(listaPalavras, 2000);
+    changeWords(listaPalavras, 2500);
 });
 </script>
