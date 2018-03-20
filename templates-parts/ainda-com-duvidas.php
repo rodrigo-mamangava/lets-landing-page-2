@@ -24,17 +24,17 @@
                 <ul class="list-inline social">
                     <li>
                         <a href="">
-                            <img src="<?php echo plugins_url('../img/Facebook@2x.png', __FILE__) ?>" alt="" class="img-responsive">                            
+                            <img data-src="<?php echo plugins_url('../img/Facebook@2x.png', __FILE__) ?>" alt="" class="img-responsive">                            
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <img src="<?php echo plugins_url('../img/Twitter@2x.png', __FILE__) ?>" alt="" class="img-responsive">
+                            <img data-src="<?php echo plugins_url('../img/Twitter@2x.png', __FILE__) ?>" alt="" class="img-responsive">
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <img src="<?php echo plugins_url('../img/Instagram@2x.png', __FILE__) ?>" alt="" class="img-responsive">
+                            <img data-src="<?php echo plugins_url('../img/Instagram@2x.png', __FILE__) ?>" alt="" class="img-responsive">
                         </a>
                     </li>
                 </ul>

@@ -44,6 +44,57 @@ body{
     src: url('font/vinila/Vinila-Rg-Cp.otf');
 }
 
+@keyframes flipInX {
+    from {
+        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    40% {
+        transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        animation-timing-function: ease-in;
+    }
+    60% {
+        transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        opacity: 1;
+    }
+    80% {
+        transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    }
+    to {
+        transform: perspective(400px);
+    }
+}
+
+.flipInX {
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    animation-name: flipInX;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+}
+
+@keyframes flipOutX {
+    from {
+        transform: perspective(400px);
+    }
+    30% {
+        transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        opacity: 1;
+    }
+    to {
+        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        opacity: 0;
+    }
+}
+.flipOutX {
+    animation-name: flipOutX;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    animation-fill-mode: both;
+    animation-duration: .3s;
+}
+
 @berdina-bold: Bernina Sans Bold;
 @berdina: Bernina Sans Regular;
 @berdina-condense: Bernina Sans Condense Bold;
@@ -189,11 +240,15 @@ header{
 
 //navbar
 .navbar-default {
-    background-color: transparent; 
+    background-color: transparent;
     border: none;
     height: 98px;
     padding-bottom: 26px;
     padding-top: 26px;
+
+    @media (max-width: @screen-xs-max){
+        padding: 3px 6px;
+    }
 
     .navbar-brand{
         font-family: @lets;
@@ -218,13 +273,10 @@ header{
         &:hover, &:focus{
             background-color: transparent;
         }
-        
-        
-
     }
 
-    li{
-        a{
+    li {
+        a {
             color: @branco !important;	
             font-family: @berdina-condense;	
             font-size: 16px;	
@@ -235,20 +287,26 @@ header{
         }
     }
 
-
+    // Dropdown menu on xs screen sizes
+    @media (max-width: @screen-xs-max) {
+        .navbar-collapse {
+            background: -moz-linear-gradient(top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.6) 100%);
+            background: -webkit-linear-gradient(top, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.6) 100%);
+            background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.6) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#99000000',GradientType=0 );
+            padding-bottom: 12px;
+        }
+    }
 }
 
 
 .animacao{
-
-    //padding-top: 160px;        
     width: 100%; 
-    min-height: 550px; 
-    background-position: 30% center; 
-    background-attachment: scroll; 
+    min-height: 80vh; 
+    background-position: 38% center; 
+    background-attachment: fixed; 
     background-repeat: no-repeat;
-    background-size: 550px 550px;
-
+    background-size: 35vw;
 
     h2{
         padding-bottom: 24px;
@@ -263,9 +321,6 @@ header{
             padding-bottom: 25px;         
         }
     }
-
-
-
 }
 
 
@@ -287,56 +342,68 @@ header{
     height: 100vh;
     position: relative;
 
-    h1{
-        padding-top: (151px-56x);
-        color: @branco;	        
+    .page-content {
+        position: absolute;
 
+        /* We find the vertical middle, but then slide the content up
+        /* by its half its height plus the header size */
+        @header-height: 98px;
+        top: 45vh; /* not exactly half, keep it slightly higher */
+        transform: translateY(-50%) translateY(-@header-height);
+        left: 0;
     }
-    p{
+
+    .title-subtext {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        color: @branco;         
+    }
+
+    p {
         padding-top: 12px;
         padding-bottom: 55px;
-        color: @branco;	
+        color: @branco; 
         font-size: 18px;
         line-height: 30px;
+
         @media (max-width: @screen-sm-max){
             padding-top: 9px;
             padding-bottom: 34px;
-            font-size: 14px;	
-            line-height: 24px;	
+            font-size: 16px;    
+            line-height: 24px;  
             text-align: center;
         }
     }
 
     @media (max-width: @screen-sm-max){
-        button{
-            .text-center;
-            .center-block;
+        .page-content {
+            width: 100%;
+            text-align: center;
         }
+
+        .title-subtext {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+
     }
 
-
-
     .role{
-
-        p{
-            font-family:  @berdina-condense;
-            .text-uppercase;
-            position: absolute;
-            width: 200px;        
-            bottom: 50px;
-            left: 50%;
-            margin-left: -100px;
-            text-align: center;
-            color: white;
-            font-size: 16px;	
-            letter-spacing: 1px;	
-            line-height: 22px; 
-
-            @media (max-width: @screen-sm-max){
-                bottom: 85px; 
-            }
-        }
-
+        font-family:  @berdina-condense;
+        .text-uppercase;
+        position: absolute;
+        width: 200px;        
+        bottom: 50px;
+        left: 50%;
+        margin-left: -100px;
+        text-align: center;
+        color: white;
+        font-size: 16px;	
+        letter-spacing: 1px;	
+        line-height: 22px; 
     }
 }
 
@@ -366,21 +433,40 @@ header{
 }
 
 #venda-mais{
-    padding-top: 0px;
-    margin-top: 80px;
-    //.animacao;
+    padding-top: 20vh;
+    margin-top: 0px;
     background-color:@branco; 
-    background-image: url(../img/ingresso@2x.png); 
+    background-image: url(../img/ingresso@2x.png);
+    position: relative;
+
     @media (max-width: @screen-sm-max){
         background-image: none;
         margin-top: 36px;
+    }
 
+    /* Adds a floating white gradient that simulates a fade effect when
+    /* the image appears beneath */
+    &:after {
+        content: '';
+        width: 100%;
+        height: 20vh;
 
+        position: absolute;
+        top: 0px;
+        left: 0px;
+
+        background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+        background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+        background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+
+        @media (max-width: @screen-sm-max) {
+            content: none;
+        }
     }
 }
 
 #sua-lista{
-    //.animacao;
     background-color:@branco; 
     background-image: url(../img/lista@2x.png); 
     @media (max-width: @screen-sm-max){
@@ -390,18 +476,39 @@ header{
 
 #formidaveis{
     padding-top: 60px;
-    //.animacao;
     background-color:@branco; 
     background-image: url(../img/ingresso-lista@2x.png); 
+    position: relative;
+
     @media (max-width: @screen-sm-max){
         background-image: none;
         padding-top: 0px;
     }
+
+    /* Adds a floating white gradient that simulates a fade effect when
+    /* the image appears beneath */
+    &:after {
+        content: '';
+        width: 100%;
+        height: 20vh;
+
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
+        background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+        background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+        background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+        @media (max-width: @screen-sm-max) {
+            content: none;
+        }
+    }
 }
 
-
-.bkg-img(){
-
+.bkg-img() {
     min-height: 760px;
     height: 100vh;
 
@@ -411,14 +518,7 @@ header{
     -o-background-size: cover;
     background-size: cover;
     display: block;
-
 }
-
-
-
-
-
-
 
 #melhores-taxas{
 
@@ -586,7 +686,6 @@ header{
 
 #conheca-seu-publico{
     .bkg-img;
-
 
     h1{
         padding-top: 109px;
@@ -1027,20 +1126,4 @@ header{
 
 
     }
-
-
 }
-
-.acabamento{
-    background: linear-gradient(180deg, @azul-2 0%, #1C8FD9 100%, #1C8FD9 100%);
-    min-height: 20px;
-}
-
-
-
-
-
-
-
-
-

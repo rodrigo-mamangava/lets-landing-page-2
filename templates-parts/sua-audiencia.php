@@ -1,4 +1,4 @@
-<section id="sua-audiencia" class="lazy" data-src="<?php echo get_field('sua_audiencia_imagem') ?>">
+<section id="sua-audiencia" data-bg="<?php echo get_field('sua_audiencia_imagem') ?>">
 
     <div class="container">
         <div class="row">

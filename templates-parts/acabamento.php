@@ -1,3 +1,0 @@
-<div class="acabamento">
-
-</div>
