@@ -7432,6 +7432,11 @@ header .logo {
   padding-bottom: 26px;
   padding-top: 26px;
 }
+@media (max-width: 767px) {
+  .navbar-default {
+    padding: 3px 6px;
+  }
+}
 .navbar-default .navbar-brand {
   font-family: Lest Regular;
   color: #ffffff;
@@ -7464,13 +7469,22 @@ header .logo {
   text-transform: uppercase;
   padding-left: 34px;
 }
+@media (max-width: 767px) {
+  .navbar-default .navbar-collapse {
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%);
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc000000', endColorstr='#99000000', GradientType=0);
+    padding-bottom: 12px;
+  }
+}
 .animacao {
   width: 100%;
-  min-height: 550px;
-  background-position: 30% center;
+  min-height: 80vh;
+  background-position: 38% center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: 550px 550px;
+  background-size: 35vw;
 }
 .animacao h2 {
   padding-bottom: 24px;
@@ -7586,15 +7600,35 @@ header .logo {
   font-weight: bold;
 }
 #venda-mais {
-  padding-top: 80px;
+  padding-top: 20vh;
   margin-top: 0px;
   background-color: #ffffff;
   background-image: url(../img/ingresso@2x.png);
+  position: relative;
+  /* Adds a floating white gradient that simulates a fade effect when
+    /* the image appears beneath */
 }
 @media (max-width: 991px) {
   #venda-mais {
     background-image: none;
     margin-top: 36px;
+  }
+}
+#venda-mais:after {
+  content: '';
+  width: 100%;
+  height: 20vh;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: -moz-linear-gradient(top, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-linear-gradient(top, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=0);
+}
+@media (max-width: 991px) {
+  #venda-mais:after {
+    content: none;
   }
 }
 #sua-lista {
@@ -7610,11 +7644,33 @@ header .logo {
   padding-top: 60px;
   background-color: #ffffff;
   background-image: url(../img/ingresso-lista@2x.png);
+  position: relative;
+  /* Adds a floating white gradient that simulates a fade effect when
+    /* the image appears beneath */
 }
 @media (max-width: 991px) {
   #formidaveis {
     background-image: none;
     padding-top: 0px;
+  }
+}
+#formidaveis:after {
+  content: '';
+  width: 100%;
+  height: 20vh;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=0);
+  /* IE6-9 */
+}
+@media (max-width: 991px) {
+  #formidaveis:after {
+    content: none;
   }
 }
 #melhores-taxas {
