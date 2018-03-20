@@ -1,4 +1,4 @@
-<section id="lets-2-min">
+<section id="lets-2-min" class='hidden'>
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
