@@ -313,6 +313,7 @@ header{
 
     @media (max-width: @screen-sm-max){
         background-image: none !important;
+        text-align: center;
     }
 
     @media (min-width: @screen-lg-min) {
@@ -335,6 +336,12 @@ header{
 
     @media (min-width: @screen-md-min) {
         background-size: 500px;
+    }
+
+    .img-responsive {
+        margin: 0 auto -65px;
+        width: 80%;
+        max-width: 350px;
     }
 }
 
@@ -452,6 +459,7 @@ header{
     background-image: url(../img/ingresso@2x.png);
 
     @media (max-width: @screen-sm-max){
+        padding-top: 0;
         margin-top: 36px;
     }
 

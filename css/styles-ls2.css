@@ -7492,6 +7492,7 @@ header .logo {
 @media (max-width: 991px) {
   .animacao .container {
     background-image: none !important;
+    text-align: center;
   }
 }
 @media (min-width: 1200px) {
@@ -7516,6 +7517,11 @@ header .logo {
   .animacao .container {
     background-size: 500px;
   }
+}
+.animacao .container .img-responsive {
+  margin: 0 auto -65px;
+  width: 80%;
+  max-width: 350px;
 }
 .lista {
   padding-left: 0;
@@ -7624,6 +7630,7 @@ header .logo {
 }
 @media (max-width: 991px) {
   #venda-mais .container {
+    padding-top: 0;
     margin-top: 36px;
   }
 }
