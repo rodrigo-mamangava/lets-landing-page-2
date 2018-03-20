@@ -29,8 +29,8 @@
         <?php include 'templates-parts/modal.php'; ?>
         <!-- Scripts -->
 
-        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.6/jquery.lazy.min.js"></script>
-        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.6/jquery.lazy.plugins.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.lazyloadxt/1.0.0/jquery.lazyloadxt.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.lazyloadxt/1.0.0/jquery.lazyloadxt.bg.min.js"></script>
         <script src="<?php echo plugins_url('./js/bootstrap.min.js', __FILE__) ?>"></script>
         <script src="<?php echo plugins_url('./js/main.js', __FILE__) ?>"></script> 
     </body>

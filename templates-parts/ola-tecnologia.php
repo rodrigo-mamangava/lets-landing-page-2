@@ -1,4 +1,4 @@
-<section id="ola-tecnologia" class="lazy" data-src="<?php echo get_field('background_ola_tecnologia')?>"   >
+<section id="ola-tecnologia" style="background-image: url(<?php echo get_field('background_ola_tecnologia')?>)">
 
     <?php include 'navbar.php'; ?>
     <div class="container">

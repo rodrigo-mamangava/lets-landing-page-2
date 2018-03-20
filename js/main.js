@@ -1,5 +1,4 @@
 $(function () {
-    $('.lazy').Lazy();
     scrollSmooth();
 });
 
