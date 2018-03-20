@@ -13,7 +13,7 @@
                         <?php echo get_field('paragrafo_ola_tecnologia')?>
                     </p>
 
-                    <button class="btn-verde uppercase"> <?php echo get_field('botao-ola-tecnologia')?></button>
+                    <a class="btn-verde uppercase" href="https://app.lets.events/events/new"> <?php echo get_field('botao-ola-tecnologia')?></a>
                 </div>
             </div>
         </div>

@@ -26,6 +26,7 @@
         <?php include 'templates-parts/ainda-com-duvidas.php'; ?>
         <?php include 'templates-parts/form.php'; ?>
         <?php include 'templates-parts/lets-2-min.php'; ?>        
+        <?php include 'templates-parts/cta-fixo.php'; ?>
         <?php include 'templates-parts/modal.php'; ?>
         <!-- Scripts -->
 

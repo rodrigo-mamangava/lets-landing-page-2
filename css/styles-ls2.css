@@ -7037,10 +7037,9 @@ fieldset[disabled] .btn-amarelo.focus {
   padding: 12px 25px;
   border-radius: 25px;
   text-transform: uppercase;
-  color: #6ED3FF;
   background-color: #F0F0F0;
   border-color: #F0F0F0;
-  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.35);
   color: #1C8FD9;
   font-family: Bernina Sans Condense Bold;
   font-size: 16px;
@@ -7084,19 +7083,19 @@ fieldset[disabled] a.btn-cinza {
 }
 .btn-cinza:focus,
 .btn-cinza.focus {
-  color: #6ED3FF;
+  color: #1C8FD9;
   background-color: #d7d7d7;
   border-color: #b0b0b0;
 }
 .btn-cinza:hover {
-  color: #6ED3FF;
+  color: #1C8FD9;
   background-color: #d7d7d7;
   border-color: #d1d1d1;
 }
 .btn-cinza:active,
 .btn-cinza.active,
 .open > .dropdown-toggle.btn-cinza {
-  color: #6ED3FF;
+  color: #1C8FD9;
   background-color: #d7d7d7;
   border-color: #d1d1d1;
 }
@@ -7109,7 +7108,7 @@ fieldset[disabled] a.btn-cinza {
 .btn-cinza:active.focus,
 .btn-cinza.active.focus,
 .open > .dropdown-toggle.btn-cinza.focus {
-  color: #6ED3FF;
+  color: #1C8FD9;
   background-color: #c5c5c5;
   border-color: #b0b0b0;
 }
@@ -7132,7 +7131,10 @@ fieldset[disabled] .btn-cinza.focus {
 }
 .btn-cinza .badge {
   color: #F0F0F0;
-  background-color: #6ED3FF;
+  background-color: #1C8FD9;
+}
+.btn-cinza:hover {
+  background-color: #fff;
 }
 .btn-verde {
   display: inline-block;
@@ -8172,4 +8174,15 @@ header .logo {
 }
 #myModal .modal-dialog .modal-content .modal-header {
   border: 0;
+}
+.cta-fixo {
+  position: fixed;
+  bottom: 2vh;
+  left: 50%;
+  transition: opacity 0.8s;
+  transform: translateX(-50%);
+  opacity: 1;
+}
+.cta-fixo-hidden {
+  opacity: 0;
 }

@@ -161,15 +161,18 @@ body{
 }
 .btn-cinza{
     .btn-padrao;
-    .button-variant(@azul; #F0F0F0; #F0F0F0);
-    box-shadow: 0 6px 20px 0 rgba(0,0,0,0.15);
+    .button-variant(#1C8FD9; #F0F0F0; #F0F0F0);
+    box-shadow: 0 3px 15px 0 rgba(0,0,0,0.35);
     color: #1C8FD9;	
     font-family: @berdina-condense;	
-    font-size: 16px;	
-    letter-spacing: 1px;	
+    font-size: 16px;
+    letter-spacing: 1px;
     line-height: 22px;
-}
 
+    &:hover {
+        background-color: #fff;
+    }
+}
 
 .btn-verde{
     .btn-padrao;
@@ -1126,4 +1129,17 @@ header{
 
 
     }
+}
+
+.cta-fixo {
+    position: fixed;
+    bottom: 2vh;
+    left: 50%;
+    transition: opacity 0.8s;
+    transform: translateX(-50%);
+    opacity: 1;
+}
+
+.cta-fixo-hidden {
+    opacity: 0;
 }

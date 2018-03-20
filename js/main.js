@@ -1,5 +1,6 @@
 $(function () {
     scrollSmooth();
+    handleFixedCTAPosition();
 });
 
 function changeWords(wordsArray, intervalo) {
@@ -21,6 +22,33 @@ function changeWords(wordsArray, intervalo) {
     }, intervalo);
 }
 
+function handleFixedCTAPosition() {
+    var SCROLL_THRESHOLD = 1/5;
+    var lastStateWasVisible = false;
+    var $cta = $("#cta-fixo");
+
+    var scroll = window.requestAnimationFrame ||
+                 window.webkitRequestAnimationFrame ||
+                 window.mozRequestAnimationFrame ||
+                 window.msRequestAnimationFrame ||
+                 window.oRequestAnimationFrame ||
+                 // IE Fallback
+                 function(callback){ window.setTimeout(callback, 1000/60) };
+
+    function loop() {
+        var top = window.pageYOffset;
+        var shouldBeVisible = top > (window.innerHeight * SCROLL_THRESHOLD);
+
+        if (shouldBeVisible != lastStateWasVisible) {
+            $cta.toggleClass('cta-fixo-hidden', !shouldBeVisible);
+            lastStateWasVisible = shouldBeVisible;
+        }
+
+        scroll(loop)
+    }
+
+    loop();
+}
 
 function scrollSmooth() {
     // Select all links with hashes
