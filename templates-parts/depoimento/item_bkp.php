@@ -11,7 +11,7 @@
                     <div class="card-depoimento">
                         <div class="row">
                             <div class="col-sm-4">
-                                <img src="img/img-depoimento@2x.png" alt="Túlio Borges, DDuck" class="img-responsive img-circle">
+                                <img data-src="img/img-depoimento@2x.png" alt="Túlio Borges, DDuck" class="img-responsive img-circle">
 
                                 <h2>Túlio Borges, DDuck</h2>
                             </div>
@@ -37,7 +37,7 @@
                     <div class="card-depoimento">
                         <div class="row">
                             <div class="col-sm-4">
-                                <img src="img/img-depoimento@2x.png" alt="Túlio Borges, DDuck" class="img-responsive">
+                                <img data-src="img/img-depoimento@2x.png" alt="Túlio Borges, DDuck" class="img-responsive">
 
                                 <h2>Túlio Borges, DDuck</h2>
                             </div>
@@ -63,7 +63,7 @@
                     <div class="card-depoimento">
                         <div class="row">
                             <div class="col-sm-4">
-                                <img src="img/img-depoimento@2x.png" alt="Túlio Borges, DDuck" class="img-responsive">
+                                <img data-src="img/img-depoimento@2x.png" alt="Túlio Borges, DDuck" class="img-responsive">
 
                                 <h2>Túlio Borges, DDuck</h2>
                             </div>

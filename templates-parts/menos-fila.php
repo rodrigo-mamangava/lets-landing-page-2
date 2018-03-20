@@ -16,7 +16,7 @@
         <div class="row">
             <div class="col-xs-12 col-sm-10 col-sm-offset-1 text-center">
                 <video playsinline="" autoplay="" muted="" loop="" id="app-demo" class="" data-mp4="true">
-                    <source src="<?php echo plugins_url('../video/demo.mp4', __FILE__) ?>" type="video/mp4">                    
+                    <source data-src="<?php echo plugins_url('../video/demo.mp4', __FILE__) ?>" type="video/mp4">
                 </video>
             </div>
         </div>

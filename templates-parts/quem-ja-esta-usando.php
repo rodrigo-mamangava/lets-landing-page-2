@@ -21,22 +21,22 @@
 
         <div id="logo-clientes" class="row">
             <div class="col-xs-6 col-sm-6 col-md-2">
-                <img src="<?php echo get_field('quem_ja_esta_usando_logo_1') ?>" alt="" class="img-responsive">
+                <img data-src="<?php echo get_field('quem_ja_esta_usando_logo_1') ?>" alt="" class="img-responsive">
             </div>
             <div class="col-xs-6 col-sm-6 col-md-2">
-                <img src="<?php echo get_field('quem_ja_esta_usando_logo_2') ?>" alt="" class="img-responsive">
+                <img data-src="<?php echo get_field('quem_ja_esta_usando_logo_2') ?>" alt="" class="img-responsive">
             </div>
             <div class="col-xs-6 col-sm-6 col-md-2">
-                <img src="<?php echo get_field('quem_ja_esta_usando_logo_3') ?>" alt="" class="img-responsive">
+                <img data-src="<?php echo get_field('quem_ja_esta_usando_logo_3') ?>" alt="" class="img-responsive">
             </div>
             <div class="col-xs-6 col-sm-6 col-md-2">
-                <img src="<?php echo get_field('quem_ja_esta_usando_logo_4') ?>" alt="" class="img-responsive">
+                <img data-src="<?php echo get_field('quem_ja_esta_usando_logo_4') ?>" alt="" class="img-responsive">
             </div>
             <div class="col-xs-6 col-sm-6 col-md-2">
-                <img src="<?php echo get_field('quem_ja_esta_usando_logo_5') ?>" alt="" class="img-responsive">
+                <img data-src="<?php echo get_field('quem_ja_esta_usando_logo_5') ?>" alt="" class="img-responsive">
             </div>
             <div class="col-xs-6 col-sm-6 col-md-2">
-                <img src="<?php echo get_field('quem_ja_esta_usando_logo_6') ?>" alt="" class="img-responsive">
+                <img data-src="<?php echo get_field('quem_ja_esta_usando_logo_6') ?>" alt="" class="img-responsive">
             </div>
         </div>
 

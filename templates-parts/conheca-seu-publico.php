@@ -1,4 +1,4 @@
-<section id="conheca-seu-publico" class="lazy" data-src="<?php echo get_field('conheca_seu_publico_imagem') ?>">
+<section id="conheca-seu-publico" data-bg="<?php echo get_field('conheca_seu_publico_imagem') ?>">
     <div class="container text-center">
         <div class="row">
             <div class="col-sm-12">
