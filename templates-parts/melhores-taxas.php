@@ -38,19 +38,19 @@
 
                 <ul class="credit-cards visible-xs visible-sm">
                     <li>
-                        <img src="<?php echo plugins_url('../img/Visa@2x.png', __FILE__) ?>" class="img-responsive" >
+                        <img data-src="<?php echo plugins_url('../img/Visa@2x.png', __FILE__) ?>" class="img-responsive" >
                     </li>
                     <li>
-                        <img src="<?php echo plugins_url('../img/Master@2x.png', __FILE__) ?>" class="img-responsive" >
+                        <img data-src="<?php echo plugins_url('../img/Master@2x.png', __FILE__) ?>" class="img-responsive" >
                     </li>
                     <li>
-                        <img src="<?php echo plugins_url('../img/Elo@2x.png', __FILE__) ?>" class="img-responsive" >
+                        <img data-src="<?php echo plugins_url('../img/Elo@2x.png', __FILE__) ?>" class="img-responsive" >
                     </li>
                     <li>
-                        <img src="<?php echo plugins_url('../img/Amex@2x.png', __FILE__) ?>" class="img-responsive" >
+                        <img data-src="<?php echo plugins_url('../img/Amex@2x.png', __FILE__) ?>" class="img-responsive" >
                     </li>
                     <li>
-                        <img src="<?php echo plugins_url('../img/Diners@2x.png"', __FILE__) ?>" class="img-responsive" >
+                        <img data-src="<?php echo plugins_url('../img/Diners@2x.png"', __FILE__) ?>" class="img-responsive" >
                     </li>
                 </ul>
                 <div class="cartoes visible-xs visible-sm ">
@@ -85,19 +85,19 @@
             <div class="col-sm-8 info">
                 <ul class="credit-cards">
                     <li>
-                        <img src="<?php echo plugins_url('../img/Visa@2x.png', __FILE__) ?>" class="img-responsive" >
+                        <img data-src="<?php echo plugins_url('../img/Visa@2x.png', __FILE__) ?>" class="img-responsive" >
                     </li>
                     <li>
-                        <img src="<?php echo plugins_url('../img/Master@2x.png', __FILE__) ?>" class="img-responsive" >
+                        <img data-src="<?php echo plugins_url('../img/Master@2x.png', __FILE__) ?>" class="img-responsive" >
                     </li>
                     <li>
-                        <img src="<?php echo plugins_url('../img/Elo@2x.png', __FILE__) ?>" class="img-responsive" >
+                        <img data-src="<?php echo plugins_url('../img/Elo@2x.png', __FILE__) ?>" class="img-responsive" >
                     </li>
                     <li>
-                        <img src="<?php echo plugins_url('../img/Amex@2x.png', __FILE__) ?>" class="img-responsive" >
+                        <img data-src="<?php echo plugins_url('../img/Amex@2x.png', __FILE__) ?>" class="img-responsive" >
                     </li>
                     <li>
-                        <img src="<?php echo plugins_url('../img/Diners@2x.png"', __FILE__) ?>" class="img-responsive" >
+                        <img data-src="<?php echo plugins_url('../img/Diners@2x.png"', __FILE__) ?>" class="img-responsive" >
                     </li>
                 </ul>
                 <div class="cartoes">

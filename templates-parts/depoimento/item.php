@@ -12,7 +12,7 @@
             <div class="card-depoimento">
                 <div class="row">
                     <div class="col-sm-4">
-                        <img src="<?php echo get_field('foto') ?>" alt="<?php echo get_field('autor') ?>" class="img-responsive img-circle ">
+                        <img data-src="<?php echo get_field('foto') ?>" alt="<?php echo get_field('autor') ?>" class="img-responsive img-circle ">
 
                         <h2>
                             <?php echo get_field('autor') ?>

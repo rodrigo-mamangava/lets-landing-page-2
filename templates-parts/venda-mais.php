@@ -5,7 +5,7 @@
         <div class="row equal ">
 
             <div class="col-xs-12 visible-xs visible-sm">
-                <img src="<?php echo plugins_url('../img/ingresso@2x.png', __FILE__); ?>" alt="" class="img-responsive">
+                <img data-src="<?php echo plugins_url('../img/ingresso@2x.png', __FILE__); ?>" alt="" class="img-responsive">
             </div>
 
             <div class="col-md-4 col-md-offset-7">
