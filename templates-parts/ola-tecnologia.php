@@ -22,7 +22,7 @@
     <a href="#mesma-plataforma" class="role">
         <?php echo get_field('role_para_ver_mais')?>
         <br/>
-        <i class="fas fa-chevron-down"></i>
+        <span class='down'>⇓</span>
     </a>
 </section><!-- ola-tecnologia -->
 

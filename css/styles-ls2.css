@@ -7540,7 +7540,7 @@ header .logo {
   padding-bottom: 18px;
 }
 #ola-tecnologia {
-  min-height: 760px;
+  min-height: 500px;
   background: no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -7597,7 +7597,7 @@ header .logo {
   text-transform: uppercase;
   position: absolute;
   width: 200px;
-  bottom: 50px;
+  bottom: 25px;
   left: 50%;
   margin-left: -100px;
   text-align: center;
@@ -7605,6 +7605,11 @@ header .logo {
   font-size: 16px;
   letter-spacing: 1px;
   line-height: 22px;
+}
+#ola-tecnologia .down {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 30px;
 }
 #mesma-plataforma {
   background-color: #6ED3FF;
@@ -7816,7 +7821,7 @@ header .logo {
   }
 }
 #sua-audiencia {
-  min-height: 760px;
+  min-height: 500px;
   height: 100vh;
   background: no-repeat center center;
   -webkit-background-size: cover;
@@ -7850,7 +7855,7 @@ header .logo {
   }
 }
 #conheca-seu-publico {
-  min-height: 760px;
+  min-height: 500px;
   height: 100vh;
   background: no-repeat center center;
   -webkit-background-size: cover;
