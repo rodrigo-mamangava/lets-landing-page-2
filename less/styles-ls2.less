@@ -305,15 +305,19 @@ header{
 .animacao .container {
     width: 100%;
     position: relative;
-    min-height: 80vh;
     background-position: 5% center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 40%;
 
+    @media (min-width: @screen-md-min) {
+        min-height: 80vh;
+    }
+
     @media (max-width: @screen-sm-max){
         background-image: none !important;
         text-align: center;
+        padding-bottom: 40px;
     }
 
     @media (min-width: @screen-lg-min) {
@@ -486,6 +490,10 @@ header{
 
 #sua-lista .container {
     background-image: url(../img/lista@2x.png);
+
+    @media (max-width: @screen-sm-max) {
+        padding-bottom: 80px;
+    }
 }
 
 #formidaveis .container {
@@ -493,7 +501,7 @@ header{
     background-image: url(../img/ingresso-lista@2x.png); 
 
     @media (max-width: @screen-sm-max){
-        padding-top: 0px;
+        display: none;
     }
 
     /* Adds a floating white gradient that simulates a fade effect when

@@ -7483,16 +7483,21 @@ header .logo {
 .animacao .container {
   width: 100%;
   position: relative;
-  min-height: 80vh;
   background-position: 5% center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 40%;
 }
+@media (min-width: 992px) {
+  .animacao .container {
+    min-height: 80vh;
+  }
+}
 @media (max-width: 991px) {
   .animacao .container {
     background-image: none !important;
     text-align: center;
+    padding-bottom: 40px;
   }
 }
 @media (min-width: 1200px) {
@@ -7654,6 +7659,11 @@ header .logo {
 #sua-lista .container {
   background-image: url(../img/lista@2x.png);
 }
+@media (max-width: 991px) {
+  #sua-lista .container {
+    padding-bottom: 80px;
+  }
+}
 #formidaveis .container {
   padding-top: 60px;
   background-image: url(../img/ingresso-lista@2x.png);
@@ -7662,7 +7672,7 @@ header .logo {
 }
 @media (max-width: 991px) {
   #formidaveis .container {
-    padding-top: 0px;
+    display: none;
   }
 }
 #formidaveis .container:after {
