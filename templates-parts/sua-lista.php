@@ -8,7 +8,7 @@
             </div>
 
 
-            <div class="col-md-4 col-md-offset-7">
+            <div class="col-md-7 col-md-offset-5 col-lg-6 col-lg-offset-6">
                 <h2><?php echo get_field('sua_lista_titulo') ?></h2>
                 <ul class="lista">
                     <li>

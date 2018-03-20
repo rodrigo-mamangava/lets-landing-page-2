@@ -6,7 +6,7 @@
                 <img data-src="<?php echo plugins_url('../img/ingresso-lista@2x.png', __FILE__); ?>" alt="" class="img-responsive">
             </div>
 
-            <div class="col-md-4 col-md-offset-7">
+            <div class="col-md-7 col-md-offset-5 col-lg-6 col-lg-offset-6">
                 <h2>
                     <?php echo get_field('formidaveis_em_conjunto_titulo') ?>
                 </h2>

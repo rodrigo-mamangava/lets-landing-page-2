@@ -302,30 +302,41 @@ header{
     }
 }
 
-
-.animacao{
-    width: 100%; 
-    min-height: 80vh; 
-    background-position: 38% center; 
-    background-attachment: fixed; 
+.animacao .container {
+    width: 100%;
+    position: relative;
+    min-height: 80vh;
+    background-position: 5% center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: 35vw;
+    background-size: 40%;
+
+    @media (max-width: @screen-sm-max){
+        background-image: none !important;
+    }
+
+    @media (min-width: @screen-lg-min) {
+        background-position: 32% center;
+    }
 
     h2{
         padding-bottom: 24px;
         .text-uppercase;
-        padding-top: 129px;   
+        padding-top: 129px;
 
 
         @media (max-width: @screen-sm-max){
             padding-bottom: 0px;
             .text-center;
-            padding-top: 25px;         
-            padding-bottom: 25px;         
+            padding-top: 25px;
+            padding-bottom: 25px;
         }
     }
-}
 
+    @media (min-width: @screen-md-min) {
+        background-size: 500px;
+    }
+}
 
 .lista{
     .list-unstyled;
@@ -435,20 +446,16 @@ header{
     }
 }
 
-#venda-mais{
-    padding-top: 20vh;
-    margin-top: 0px;
-    background-color:@branco; 
-    background-image: url(../img/ingresso@2x.png);
+#venda-mais .container {
     position: relative;
+    padding-top: 20vh;
+    background-image: url(../img/ingresso@2x.png);
 
     @media (max-width: @screen-sm-max){
-        background-image: none;
         margin-top: 36px;
     }
 
-    /* Adds a floating white gradient that simulates a fade effect when
-    /* the image appears beneath */
+    // Adds a floating white gradient that simulates a fade effect
     &:after {
         content: '';
         width: 100%;
@@ -469,22 +476,15 @@ header{
     }
 }
 
-#sua-lista{
-    background-color:@branco; 
-    background-image: url(../img/lista@2x.png); 
-    @media (max-width: @screen-sm-max){
-        background-image: none;
-    }
+#sua-lista .container {
+    background-image: url(../img/lista@2x.png);
 }
 
-#formidaveis{
+#formidaveis .container {
     padding-top: 60px;
-    background-color:@branco; 
     background-image: url(../img/ingresso-lista@2x.png); 
-    position: relative;
 
     @media (max-width: @screen-sm-max){
-        background-image: none;
         padding-top: 0px;
     }
 
