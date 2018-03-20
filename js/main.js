@@ -1,3 +1,5 @@
+$.extend($.lazyLoadXT, { edgeY:  400 });
+
 $(function () {
     scrollSmooth();
     handleFixedCTAPosition();
