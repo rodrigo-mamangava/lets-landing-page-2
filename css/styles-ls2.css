@@ -8173,7 +8173,3 @@ header .logo {
 #myModal .modal-dialog .modal-content .modal-header {
   border: 0;
 }
-.acabamento {
-  background: linear-gradient(180deg, #3CC2EE 0%, #1C8FD9 100%, #1C8FD9 100%);
-  min-height: 20px;
-}

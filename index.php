@@ -27,7 +27,6 @@
         <?php include 'templates-parts/form.php'; ?>
         <?php include 'templates-parts/lets-2-min.php'; ?>        
         <?php include 'templates-parts/modal.php'; ?>
-        <?php include 'templates-parts/acabamento.php'; ?>
         <!-- Scripts -->
 
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.6/jquery.lazy.min.js"></script>
