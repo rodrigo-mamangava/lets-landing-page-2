@@ -6,10 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="<?php echo plugins_url('css/styles-ls2.css', __FILE__) ?>">
         <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
         <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
         <title>
             <?php echo get_field('title') ?>
         </title>
+        <?php wp_head() ?>
     </head>
     <body>
         <?php include 'templates-parts/ola-tecnologia.php'; ?>        
@@ -34,4 +36,5 @@
         <script src="<?php echo plugins_url('./js/bootstrap.min.js', __FILE__) ?>"></script>
         <script src="<?php echo plugins_url('./js/main.js', __FILE__) ?>"></script> 
     </body>
+    <?php wp_footer() ?>
 </html>
