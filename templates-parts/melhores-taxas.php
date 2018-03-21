@@ -2,6 +2,7 @@
     <div class="container text-center">
         <div class="row">
             <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                <a name="melhores-taxas"></a>
                 <h1><?php echo get_field('melhores_taxas_titulo_1') ?></h1>
                 <p class="desc">
                     <?php echo get_field('melhores_taxas_descricao') ?>
@@ -19,7 +20,7 @@
                                 <span>%</span>
                             </p>
                             <p class="obs">
-                                <?php _traduzir('no boleto', 'no boleto'); ?>
+                                <?php echo get_field('no_boleto') ?>
                             </p>
                         </div>
                         <div class="col-sm-6 ">
@@ -27,7 +28,7 @@
                                 <span> %</span>
                             </p>
                             <p class="obs">
-                                <?php _traduzir('In the card', 'no cartão'); ?>
+                                <?php echo get_field('no_cartao') ?>
                             </p>
                         </div>
                     </div>
@@ -71,7 +72,7 @@
                         <span>,00</span>
                     </p>
                     <p class="obs">
-                        <?php _traduzir('really free', 'grátis de verdade'); ?>                        
+                        <?php echo get_field('gratis_de_verdade') ?>
                     </p>
                 </div>
 

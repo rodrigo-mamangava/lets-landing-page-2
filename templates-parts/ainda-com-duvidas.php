@@ -10,7 +10,7 @@
                 <p>
                     <?php echo get_field('ainda_com_duvidas_descricao') ?>
                 </p>
-                <button class="btn-verde">
+                <button class="btn-verde" data-toggle="modal" data-target="#faleConsultor">
                     <?php echo get_field('ainda_com_duvidas_botao') ?>
                 </button>
             </div>
@@ -19,90 +19,78 @@
 
     <div class="container footer">
         <div class="row">
-            <div class="col-sm-6 col-md-3">
-                <h2 class="hidden-xs hidden-sm" >Lets.events</h2>
+            <div class="col-sm-12 col-md-3">
+                <h2 class="hidden-xs" >Lets.events</h2>
                 <ul class="list-inline social">
                     <li>
-                        <a href="">
-                            <img data-src="<?php echo plugins_url('../img/Facebook@2x.png', __FILE__) ?>" alt="" class="img-responsive">                            
+                        <a href="https://facebook.com/letseventsofficial" target="_blank">
+                            <img data-src="<?php echo plugins_url('../img/Facebook@2x.png', __FILE__) ?>" alt="" class="img-responsive">
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="https://twitter.com/lets_events" target="_blank">
                             <img data-src="<?php echo plugins_url('../img/Twitter@2x.png', __FILE__) ?>" alt="" class="img-responsive">
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="https://www.instagram.com/lets.events" target="_blank">
                             <img data-src="<?php echo plugins_url('../img/Instagram@2x.png', __FILE__) ?>" alt="" class="img-responsive">
                         </a>
                     </li>
                 </ul>
             </div>
-            <div class="col-sm-6 col-md-3">
-                <h2><?php _traduzir('Talk to a consultant', 'Fale com um consultor')?></h2>
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="">Blog</a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <?php _traduzir('Price', 'Preço')?>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <h2><?php _traduzir('Solutions for organizers', 'Soluções para organizadores')?>
-                    </h2>
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="">
-                            <?php _traduzir('Manage multiple lists', 'Gerencie múltiplas listas')?>
-                            </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <?php _traduzir('Performance of your event', 'Performance do seu evento')?>
-                            </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <?php _traduzir('Agility in your concierge', 'Agilidade na sua portaria')?>
-                            </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <?php _traduzir('Sale of tickets', 'Venda de ingressos')?>
-                            </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <h2>Suporte</h2>
-                <ul class="list-unstyled ultima-lista">
-                    <li>
-                        <a href="">
-                            <?php _traduzir('Frequently Asked Questions', 'Dúvidas frequentes')?>
-                            </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <?php _traduzir('Terms and conditions', 'Termos e condições')?>
-                            </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <?php _traduzir('Agility in your concierge', 'Agilidade na sua portaria')?>
-                            </a>
-                    </li>
-                    <li>
-                        <a href="">equipe@lets.events</a>
-                    </li>
-                </ul>
+            <div class="col-sm-12 col-md-9">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h2><?php echo get_field('institucional') ?></h2>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="https://lets.events/blog">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#melhores-taxas">
+                                    <?php echo get_field('preco') ?>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <h2><?php echo get_field('solucoes_para_organizadores') ?>
+                            </h2>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="https://lets.events/listas-de-convidados">
+                                    <?php echo get_field('gestao_de_listas') ?>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://lets.events">
+                                    <?php echo get_field('venda_de_ingressos') ?>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <h2><?php echo get_field('suporte') ?></h2>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="https://support.lets.events/">
+                                    <?php echo get_field('duvidas_frequentes') ?>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://app.lets.events/terms-of-use">
+                                    <?php echo get_field('termos_de_uso') ?>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- row -->
     </div>
+
+    <?php include 'form.php'; ?>
 </section>
 <!-- #ainda-com-duvidas -->
