@@ -1016,6 +1016,10 @@ header{
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media (max-width: @screen-xs-max) {
+            flex-direction: column;
+        }
     }
 
     a {
@@ -1028,6 +1032,10 @@ header{
         display: flex;
 
         img { width: 140px; margin-left: 10px; }
+
+        @media (max-width: @screen-xs-max) {
+            margin-bottom: 15px;
+        }
     }
 
     .from-bh {
@@ -1035,6 +1043,8 @@ header{
         text-align: right;
         img { width: 60px; }
     }
+
+
 }
 
 #lets-2-min {

@@ -8109,6 +8109,11 @@ header .logo {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 767px) {
+  .from .container {
+    flex-direction: column;
+  }
+}
 .from a {
   text-decoration: underline;
   color: #ffffff;
@@ -8120,6 +8125,11 @@ header .logo {
 .from .app-stores img {
   width: 140px;
   margin-left: 10px;
+}
+@media (max-width: 767px) {
+  .from .app-stores {
+    margin-bottom: 15px;
+  }
 }
 .from .from-bh {
   flex-grow: 1;
