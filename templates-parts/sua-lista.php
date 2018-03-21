@@ -3,12 +3,12 @@
     <div class="container">
         <div class="row equal">
 
-            <div class="col-xs-12 visible-xs visible-sm">
-                <img data-src="<?php echo plugins_url('../img/lista@2x.png', __FILE__); ?>" alt="" class="img-responsive">
+            <div class="col-xs-12 visible-xs visible-sm xs-image">
+                <img src="<?php echo plugins_url('../img/lista@2x.png', __FILE__); ?>" alt="" class="img-responsive">
             </div>
 
 
-            <div class="col-md-4 col-md-offset-7">
+            <div class="col-xs-12 col-md-7 col-md-offset-5 col-lg-6 col-lg-offset-6">
                 <h2><?php echo get_field('sua_lista_titulo') ?></h2>
                 <ul class="lista">
                     <li>
