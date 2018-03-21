@@ -14,7 +14,7 @@
         <?php wp_head() ?>
     </head>
     <body>
-        <?php include 'templates-parts/ola-tecnologia.php'; ?>        
+        <?php include 'templates-parts/ola-tecnologia.php'; ?>
         <?php include 'templates-parts/mesma-plataforma.php'; ?>
         <?php include 'templates-parts/venda-mais.php'; ?>
         <?php include 'templates-parts/sua-lista.php'; ?>
@@ -26,15 +26,15 @@
         <?php include 'templates-parts/quem-ja-esta-usando.php'; ?>
         <?php include 'templates-parts/ainda-com-duvidas.php'; ?>
         <?php include 'templates-parts/form.php'; ?>
-        <?php include 'templates-parts/lets-2-min.php'; ?>        
-        <?php include 'templates-parts/cta-fixo.php'; ?>
+        <?php include 'templates-parts/lets-2-min.php'; ?>
         <?php include 'templates-parts/modal.php'; ?>
+        <?php include 'templates-parts/cta-fixo.php'; ?>
         <!-- Scripts -->
 
         <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.lazyloadxt/1.0.0/jquery.lazyloadxt.extra.min.js"></script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.lazyloadxt/1.0.0/jquery.lazyloadxt.bg.min.js"></script>
         <script src="<?php echo plugins_url('./js/bootstrap.min.js', __FILE__) ?>"></script>
-        <script src="<?php echo plugins_url('./js/main.js', __FILE__) ?>"></script> 
+        <script src="<?php echo plugins_url('./js/main.js', __FILE__) ?>"></script>
     </body>
     <?php wp_footer() ?>
 </html>
