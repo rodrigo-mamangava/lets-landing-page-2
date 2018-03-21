@@ -920,27 +920,22 @@ header{
 
 }//#quem-ja-esta-usando
 
-#ainda-com-duvidas{
-    height: 873px;
+#ainda-com-duvidas {
     background: linear-gradient(180deg, @azul-2 0%, #1C8FD9 100%, #1C8FD9 100%);
     color: @branco;
+    position: relative;
+    z-index: 2; // floating CTA will hide behind this section //
+
     .text-center;
 
-    @media (max-width: @screen-sm-max){
-        height: auto;
-
-    }
-
-    h1{
+    h1 {
         padding-top: 140px;
         padding-bottom: 12px;
 
         @media (max-width: @screen-sm-max){
             padding-top: 50px;
             padding-bottom: 10px;
-
         }
-
     }
 
     p{
@@ -951,14 +946,16 @@ header{
         padding-bottom: 30px;
     }
 
-    .footer{
-        margin-top: 105px;
-        padding-top: 60px; 
+    .footer {
+        margin-top: 80px;
+        padding: 30px; 
 
         @media (max-width: @screen-sm-max){
-            margin-top: 0;
-            padding-top: 73px; 
+            margin-top: 30px;
+        }
 
+        @media (max-width: @screen-xs-max){
+            .text-center;
         }
 
         .text-left;
@@ -974,28 +971,15 @@ header{
         ul{
 
             &.social{
-
-
-                @media (max-width: @screen-sm-max){
-                    .text-center;
-                    margin-bottom: 41px;
-
-                }
                 margin-bottom: 15px;
-
 
                 li{
                     padding-left: 5px;
                     padding-right: 15px;
 
-
-                    @media (max-width: @screen-sm-max){
-                        padding-left: 0;
+                    &:last-child { 
                         padding-right: 0;
-                        padding: 0 5px;
-
                     }
-
                 }
 
             }
@@ -1003,7 +987,7 @@ header{
             li{
                 padding-bottom: 18px;
                 font-family: @berdina;	
-                font-size: 14px;	
+                font-size: 14px;
                 line-height: 20px;
 
                 a{
@@ -1019,93 +1003,45 @@ header{
             }
         }
 
-        .ultima-lista{
-
-            @media (max-width: @screen-sm-max){
-                margin-bottom: 270px;        
-            }
-        }
-
-
-
     }
-
-
 
 }//ainda-com-duvidas
 
-.from{
-    height: 107px;
-    margin-top: -107px;
-    padding: 33px 123px;
+.from {
     border-top: 1px solid rgba(255,255,255,0.8);
+    padding: 20px 0;
+    color: @branco;
 
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-
-    @media (max-width: @screen-sm-max){
-        height: 127px;
-        margin-top: -270px;
-        padding: 0;
-
-        .text-center;
-
-    }
-    p{
-        .pull-right;    
+        @media (max-width: @screen-xs-max) {
+            flex-direction: column;
+        }
     }
 
-    p, a{
+    a {
+        text-decoration: underline;
         color: @branco;
-
-        @media (max-width: @screen-sm-max){
-            font-size: 12px;	
-            line-height: 17px;
-
-            float: none !important;
-
-        }
-
     }
 
-    a{
-        text-decoration: underline;   
-    }
+    .app-stores {
+        flex-grow: 1;
+        display: flex;
 
-    p{
-        img{
-            padding: 0 3.5px;       
-            width: 60px;
-            height: auto;
+        img { width: 140px; margin-left: 10px; }
+
+        @media (max-width: @screen-xs-max) {
+            margin-bottom: 15px;
         }
     }
 
-    ul{
-        li{
-            padding-left: 0px;
-            padding-right: 25px;
-
-            @media (max-width: @screen-sm-max){
-
-                padding-left: 0px;
-                padding-right: 0px;
-
-            }
-
-            img{
-                width: 140px;
-                height: auto;
-
-
-                @media (max-width: @screen-sm-max){
-
-                    width: 130px;
-                    padding-top: 24px;
-                    .center-block;
-
-                }
-
-            }
-        }
+    .from-bh {
+        flex-grow: 1;
+        text-align: right;
+        img { width: 60px; }
     }
 
 
