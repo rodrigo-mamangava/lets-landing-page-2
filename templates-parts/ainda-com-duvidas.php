@@ -10,7 +10,7 @@
                 <p>
                     <?php echo get_field('ainda_com_duvidas_descricao') ?>
                 </p>
-                <button class="btn-verde">
+                <button class="btn-verde" data-toggle="modal" data-target="#faleConsultor">
                     <?php echo get_field('ainda_com_duvidas_botao') ?>
                 </button>
             </div>
@@ -24,7 +24,7 @@
                 <ul class="list-inline social">
                     <li>
                         <a href="">
-                            <img data-src="<?php echo plugins_url('../img/Facebook@2x.png', __FILE__) ?>" alt="" class="img-responsive">                            
+                            <img data-src="<?php echo plugins_url('../img/Facebook@2x.png', __FILE__) ?>" alt="" class="img-responsive">
                         </a>
                     </li>
                     <li>
