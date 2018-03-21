@@ -17,6 +17,14 @@
     </div>
 </div>
 
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" id="faleConsultor" aria-labelledby="faleConsultor">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <?php echo get_field('fale-consultor') ?>
+    </div>
+  </div>
+</div>
+
 <script>
     $("#myModal").on('hidden.bs.modal', function (e) {
         $("#myModal iframe").attr("src", $("#myModal iframe").attr("src"));
