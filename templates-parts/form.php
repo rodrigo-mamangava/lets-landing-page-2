@@ -5,11 +5,11 @@
             <div class="col-xs-12 col-sm-6">
                 <ul class="list-inline">
                     <li>
-                        <a href="">
+                        <a href="https://itunes.apple.com/br/app/lets/id977493296" target="_blank">
                             <img data-src="<?php echo plugins_url('../img/Apple@2x.png', __FILE__) ?>" alt="" class="img-responsive">
                         </a>
                     </li>
-                    <li>
+                    <li class='hidden'>
                         <a href="">
                             <img data-src="<?php echo plugins_url('../img/GooglePlay@2x.png', __FILE__) ?>" alt="" class="img-responsive">
                         </a>

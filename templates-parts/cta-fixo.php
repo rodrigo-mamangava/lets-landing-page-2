@@ -1,0 +1,1 @@
+<a id='cta-fixo' class="cta-fixo cta-fixo-hidden btn-cinza uppercase" href="https://app.lets.events/events/new"> <?php echo get_field('botao-ola-tecnologia')?></button>
