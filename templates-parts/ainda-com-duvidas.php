@@ -23,17 +23,17 @@
                 <h2 class="hidden-xs" >Lets.events</h2>
                 <ul class="list-inline social">
                     <li>
-                        <a href="">
+                        <a href="https://facebook.com/letseventsofficial" target="_blank">
                             <img data-src="<?php echo plugins_url('../img/Facebook@2x.png', __FILE__) ?>" alt="" class="img-responsive">
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="https://twitter.com/lets_events" target="_blank">
                             <img data-src="<?php echo plugins_url('../img/Twitter@2x.png', __FILE__) ?>" alt="" class="img-responsive">
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="https://www.instagram.com/lets.events" target="_blank">
                             <img data-src="<?php echo plugins_url('../img/Instagram@2x.png', __FILE__) ?>" alt="" class="img-responsive">
                         </a>
                     </li>
