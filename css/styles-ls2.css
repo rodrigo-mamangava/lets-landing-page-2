@@ -8033,6 +8033,8 @@ header .logo {
 #ainda-com-duvidas {
   background: linear-gradient(180deg, #3CC2EE 0%, #1C8FD9 100%, #1C8FD9 100%);
   color: #ffffff;
+  position: relative;
+  z-index: 2;
   text-align: center;
 }
 #ainda-com-duvidas h1 {
