@@ -8031,7 +8031,7 @@ header .logo {
   }
 }
 #ainda-com-duvidas {
-  height: 873px;
+  height: 730px;
   background: linear-gradient(180deg, #3CC2EE 0%, #1C8FD9 100%, #1C8FD9 100%);
   color: #ffffff;
   text-align: center;
@@ -8059,8 +8059,8 @@ header .logo {
   padding-bottom: 30px;
 }
 #ainda-com-duvidas .footer {
-  margin-top: 105px;
-  padding-top: 60px;
+  margin-top: 80px;
+  padding: 30px;
   text-align: left;
 }
 @media (max-width: 991px) {
