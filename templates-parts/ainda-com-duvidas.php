@@ -20,7 +20,7 @@
     <div class="container footer">
         <div class="row">
             <div class="col-sm-12 col-md-3">
-                <h2 class="hidden-xs hidden-sm" >Lets.events</h2>
+                <h2 class="hidden-xs" >Lets.events</h2>
                 <ul class="list-inline social">
                     <li>
                         <a href="">
@@ -72,7 +72,7 @@
                     </div>
                     <div class="col-sm-4">
                         <h2><?php _traduzir('Support', 'Suporte')?></h2>
-                        <ul class="list-unstyled ultima-lista">
+                        <ul class="list-unstyled">
                             <li>
                                 <a href="https://support.lets.events/">
                                     <?php _traduzir('Frequently Asked Questions', 'Dúvidas frequentes')?>
@@ -90,5 +90,7 @@
         </div>
         <!-- row -->
     </div>
+
+    <?php include 'form.php'; ?>
 </section>
 <!-- #ainda-com-duvidas -->
