@@ -35,6 +35,6 @@
         <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.lazyloadxt/1.0.0/jquery.lazyloadxt.bg.min.js"></script>
         <script src="<?php echo plugins_url('./js/bootstrap.min.js', __FILE__) ?>"></script>
         <script src="<?php echo plugins_url('./js/main.js', __FILE__) ?>"></script>
+        <?php wp_footer() ?>
     </body>
-    <?php wp_footer() ?>
 </html>
